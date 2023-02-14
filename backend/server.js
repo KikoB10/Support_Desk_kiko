@@ -15,7 +15,7 @@ app.use(express.json()); //allows us to send raw json
 app.use(express.urlencoded({ extended: false })); //accepts urlencoded form
 
 app.get('/', (req, res) => {
-  res.status(201).json({ message: 'Welcome to the SUpport Desk API' });
+  res.status(201).json({ message: 'Welcome to the Support Desk API' });
 });
 
 //Routes

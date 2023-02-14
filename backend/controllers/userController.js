@@ -44,7 +44,7 @@ const registerUser = asyncHandler(async (req, res) => {
     });
   } else {
     res.status(400);
-    throw new Error('Invalid user data');
+    throw new Error('Invalid user data'); //brads github repo has error with lowercase e
   }
 });
 
@@ -53,6 +53,7 @@ const registerUser = asyncHandler(async (req, res) => {
 //@access Public
 const loginUser = asyncHandler(async (req, res) => {
   const { email, password } = req.body;
+
   const user = await User.findOne({ email });
 
   //check user and passwords match
