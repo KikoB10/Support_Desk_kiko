@@ -80,7 +80,7 @@ const getMe = asyncHandler(async (req, res) => {
     name: req.user.name,
   };
   res.status(200).json(user);
-  res.send('me');
+  // res.send('me'); You see a big an error when you try to send more than one response back from a controller/route handler, which you cannot do so this line in conjunction with above was causing problems. 
 });
 
 //Generate Token
