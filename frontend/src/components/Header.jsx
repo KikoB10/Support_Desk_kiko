@@ -35,12 +35,12 @@ function Header() {
                 <FaSignInAlt />
                 Login
               </Link>
-              <li>
-                <Link to="/register">
-                  <FaUser />
-                  Register
-                </Link>
-              </li>
+            </li>
+            <li>
+              <Link to="/register">
+                <FaUser />
+                Register
+              </Link>
             </li>
           </>
         )}
